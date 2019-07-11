@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+<!--header-->
+
+		<header class="header">
+			<!--nav-->
+			<nav class="header__menu">
+			<!--ul-->
+				<!--li-->
+				<ul class="header__navigation">
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Фото и видео</a></li>
+					<li><a href="#">Форма отзыва</a></li>
+					<li><a href="#">HTML Academy</a></li>
+				</ul>
+			</nav>
+			<div class="header__logo">
+				<div class="header__icon">
+			<!--				alt нужно писать-->
+					<img  src="svg-sedona/vectorpaint.svg" alt="Логотип">
+				</div>
+				<div class="header__bg">
+					<img style="width: 50%;" src="img/background-photo.jpg" alt=""><img src="img/polygon.svg" alt="">
+					<p>SEDONA</p>
+
+				</div>
+			</div>
+			<div class="header__comment">
+				<h2 class="header_h2">Оставте свой отзыв</h2>
+				<p>Помогите нашим отелям стать лучше! Оставь отзыв о них, а так же о посещенных вами достопремечательностях</p>
+			</div>
+		</header>
+
+<!--main-->
+
+		<main class="main">
+
+			<div class="submit-form">
+			<!--все поля в одной форме должны быть-->
+				<form action="#">
+			<!--К каждому инпуту должен относиться label по id-->
+					<fieldset>
+						<legend class="submit-form__header">Представьтесь:</legend>
+						<label class="submit-form__label" for="name">Имя<span class="star">*</span>:</label>
+						<input  class="submit-form__input" id="name" type="text" placeholder="Имя"><br>
+						<label class="submit-form__label" for="surname">Фамилия<span class="star">*</span>:</label><input class="submit-form__input" id="surname" type="text" placeholder="Фамилия"><br>
+						<label class="submit-form__label" for="patronymic">Отчество:</label>
+						<input class="submit-form__input" id="patronymic" type="text" placeholder="Отчество">
+					</fieldset>
+				</form><br><br>
+			</div>
+
+			<div class="contact-form">
+			<!--formset и legend http://htmlbook.ru/html/fieldset-->
+					<form action="#">
+						<fieldset>
+							<legend class="contact-form__header">Контактная информация:</legend>
+							<label class="contact-form__label" for="phone">Контактный телефон <span class="star">*</span>:</label>
+							<input class="contact-form__input" id="phone" type="text" placeholder="Введите телефон">
+							<div class="phone" style="width: 25px; height: 28px;">
+								<img style="width: 25px; height: 28px;" src="svg-sedona/phone.svg" alt="">
+							</div><br>
+							<label class="contact-form__label" for="e-mail">Электронная почта <span class="star">*</span>:</label>
+							<input class="contact-form__input" id="e-mail" type="text" placeholder="Введите e-mail">
+							<div class="email" style="width: 25px; height: 28px;">
+								<img src="svg-sedona/e-mail.svg" alt="">
+							</div>
+						</fieldset>
+					</form>
+			</div>
+			<div class="impression-form">
+
+				<form action="#">
+					<fieldset>
+						<legend class="impression-form__header">Ваше общее впечатление</legend>
+						<input id="plus" class="impression-form__input" type="radio" name="answer" value="plus">
+						<label for="plus">Скорее положительное</label><br>
+						<input id="minus" class="impression-form__input" type="radio" name="answer" value="minus">
+						<label for="minus">Скорее отрицательное</label><br>
+						<input id="so-so" class="impression-form__input" type="radio" name="answer" value="so-so">
+						<label for="so-so">Затрудняюсь ответить</label>
+					</fieldset>
+				</form>
+			</div>
+
+			<div class="landmark-form">
+				<form action="#">
+					<fieldset>
+						<legend class="landmark-form__header">Посещенные достопримечательности:</legend>
+						<input id="devil" class="landmark-form__input" type="checkbox" name="place1">
+						<label for="devil">Мост Дьявола</label> <br>
+						<input id="bell" class="landmark-form__input" type="checkbox" name="place2">
+						<label for="bell">Гора-Колокол</label> <br>
+						<input id="slide" class="landmark-form__input" type="checkbox" name="place3">
+						<label for="slide">Слайд-парк</label> <br>
+						<input id="redrocks" class="landmark-form__input" type="checkbox" name="place4">
+						<label for="redrocks">Красные скалы</label>
+					</fieldset>
+				</form>
+			</div>
+			<div class="emotion-form">
+				<form action="">
+					<fieldset>
+						<legend class="emotion-form__header">Опишите свои эмоции:</legend>
+						<textarea class="emotion-form__textarea" name="comment" id="" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea><br>
+						<button class="emotion-form__button">Отправить отзыв</button>
+					</fieldset>
+				</form>
+			</div>
+		</main>
+<!--footer-->
+
+		<footer class="footer">
+				<h2>#visitsedona</h2>
+				<div class="footer__icons" style="background-color: #c0c0c0">
+					<a href="#"><img src="img/twitter.svg" alt=""></a>
+				</div>
+				<div class="foote__icons" style="background-color: #c0c0c0">
+					<a href="#"><img src="img/fb-icon.svg" alt=""></a>
+				</div>
+				<div class="footer__icons" style="background-color: #c0c0c0">
+					<a href="#"><img src="img/youtube.svg" alt=""></a>
+				</div>
+				<div class="footer__logo">
+					<span class="footer__text-logo">Разработано</span>
+					<a href="#"><img style="width: 30px;" src="img/logo-academy.png" alt=""></a>
+				</div>
+		</footer>
+
+</body>
+</html>
