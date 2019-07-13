@@ -9,17 +9,29 @@
 <body>
 
 		<header class="header">
-			<nav class="header__menu">
+			<nav class="header__menu" id="nav-menu">
 				<ul class="header__navigation">
 					<a href="#" class="header__navigation-li"><li>Главная</li></a>
 					<a href="#" class="header__navigation-li"><li>Фото и видео</li></a>
 					<a href="#" class="header__navigation-li"><li>Форма отзыва</li></a>
 					<a href="#" class="header__navigation-li"><li>HTML Academy</li></a>
 				</ul>
-				<img src="" alt="">
+									
 			</nav>
+
 			<div class="header__logo">
-				<div class="header__icon">
+				<div class="svg">
+					<a class="to-nav" href="#nav-menu" onclick="">
+						<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+						width="30" height="30"
+						viewBox="0 0 50 50"
+						style=" fill:#81b3d2;">    
+							<path  d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z">						
+							</path>
+						</svg>
+					</a>
+				</div>	
+				<div class="header__icon">					
 					<img  src="img/vectorpaint.svg" alt="Логотип">
 				</div>
 				<div class="header__bg">
@@ -70,37 +82,50 @@
 					<div class="comment-form__impression">
 
 							<fieldset>
-								<h2 class="impression__header">Ваше общее впечатление</h2>
-								<input id="plus" class="impression__input" type="radio" name="answer" value="plus">
-								<label for="plus">Скорее положительное</label>
-								<input id="minus" class="impression__input" type="radio" name="answer" value="minus">
-								<label for="minus">Скорее отрицательное</label>
-								<input id="so-so" class="impression__input" type="radio" name="answer" value="so-so">
-								<label for="so-so">Затрудняюсь ответить</label>
+								<ul >
+									<h2 class="impression__header">Ваше общее впечатление:</h2>
+									<li>
+										<input id="plus" class="comment-form__impression-input" type="radio" name="answer" value="plus">
+										<label for="plus">Скорее положительное</label>
+									</li>
+									<li>
+										<input id="minus" class="comment-form__impression-input" type="radio" name="answer" value="minus">
+										<label for="minus">Скорее отрицательное</label>
+									</li>
+									<li>
+										<input id="so-so" class="comment-form__impression-input" type="radio" name="answer" value="so-so">
+										<label for="so-so">Затрудняюсь ответить</label>
+									</li>
+								</ul>
 							</fieldset>
 					</div>
 
 					<div class="comment-form__landmark">
 							<fieldset>
-								<h2 class="landmark__header">Посещенные достопримечательности:</h2>
-								<input id="devil" class="landmark__input" type="checkbox" name="place1">
+								<h2 class="comment-form__landmark-header">Посещенные достопримечательности:</h2>
+								<input id="devil" class="comment-form__landmark-input" type="checkbox" name="place1">
 								<label for="devil">Мост Дьявола</label> <br>
-								<input id="bell" class="landmark__input" type="checkbox" name="place2">
+								<input id="bell" class="comment-form__landmark-input" type="checkbox" name="place2">
 								<label for="bell">Гора-Колокол</label> <br>
-								<input id="slide" class="landmark__input" type="checkbox" name="place3">
+								<input id="slide" class="comment-form__landmark-input" type="checkbox" name="place3">
 								<label for="slide">Слайд-парк</label> <br>
-								<input id="redrocks" class="landmark__input" type="checkbox" name="place4">
+								<input id="redrocks" class="comment-form__landmark-input" type="checkbox" name="place4">
 								<label for="redrocks">Красные скалы</label>
 							</fieldset>
 					</div>
 					<div class="comment-form__emotion">
 							<fieldset>
-								<h2 class="emotion__header">Опишите свои эмоции:</h2>
-								<textarea class="emotion__textarea" name="comment" id="" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea><br>
+								<h2 class="comment-form__emotion-header">Опишите свои эмоции:</h2>
+								<textarea class="comment-form__emotion-textarea" name="comment" id="" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea><br>
 								
 							</fieldset>
 					</div>
-					<button class="emotion-form__button">Отправить отзыв</button>
+					<div class="comment-form__button">
+						<fieldset>
+							<button>Отправить отзыв</button>
+						</fieldset>						
+					</div>
+					
 				</form>
 			</div>
 		</main>
@@ -108,15 +133,18 @@
 
 		<footer class="footer">
 				<h2>#visitsedona</h2>
-				<div class="footer__icons">
+				<div class="footer-flex">
+					<div class="footer__icons">
 					<a href="#"><img src="img/twitter.svg" alt=""></a>
+					</div>
+					<div class="footer__icons">
+						<a href="#"><img src="img/fb-icon.svg" alt=""></a>
+					</div>
+					<div class="footer__icons">
+						<a href="#"><img src="img/youtube.svg" alt=""></a>
+					</div>
 				</div>
-				<div class="foote__icons">
-					<a href="#"><img src="img/fb-icon.svg" alt=""></a>
-				</div>
-				<div class="footer__icons">
-					<a href="#"><img src="img/youtube.svg" alt=""></a>
-				</div>
+				
 				<div class="footer__logo">
 					<span class="footer__text-logo">Разработано</span>
 					<a href="#"><img src="img/logo-academy.png" alt=""></a>
