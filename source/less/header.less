@@ -1,23 +1,15 @@
-@btn-color: #81b3d2;
-@main-text-color: #696969;
-@input-bg-color:#f2f2f2;
-@header-size: 14pt;
-@font:Verdana, Geneva, Tahoma, sans-serif;
-
-@media (max-width: 812px){
-    .header__menu{
-        display: none;
-    }
-}
-.header_{
-    
-    &_navigation{
+@import url("variables.less");
+@import url("logo.less");
+@import url("icon.less");
+@import url("bg.less");
+.header{
+    &__navigation{
         margin-left: 0;
         padding-left: 0; 
         margin-top: 0; 
         margin-bottom: 10px;
         list-style-type: disc;
-        li{
+        &-li{
             background-color: @btn-color;
             text-align: center;  
             list-style-type: none;
@@ -27,82 +19,15 @@
             height: 60px;
             
         }
-        a{
+        &-a{
             font-family: @font;
             text-transform: uppercase;
             font-size: 14pt;
             text-decoration: none;
             color: #fff;
         }
-
-    }
-
-    &_logo{
-        width: 100%;
-        
-        svg{
-            text-align: right;
-            margin-right: 20px;
-        }
-        .to-nav{
-            float: right;
-            text-decoration: none;
-            letter-spacing: 0.1em;
-            -webkit-border-radius: 2px;
-            -moz-border-radius: 2px;
-           
-            path{
-                line-height:normal;
-                text-indent:0;
-                text-align:start;
-                text-decoration-line:none;
-                text-decoration-style:solid;
-                text-decoration-color:#81b3d2;
-                text-transform:none;
-                isolation:auto;
-                mix-blend-mode:normal; 
-                font-weight: 400; 
-                font-family: sans-serif; 
-                white-space: normal; 
-                overflow: visible;
-                
-            }
-
-            }
-    }
-        
-    &_icon{
-        img{
-            width: 160px;
-            height: 80px;
-            position: absolute;
-            left: 50%;
-            margin-left: -80px;
-            margin-top: -10px;  
-        }
-    }
-    &_bg{
-        &-photo{
-            display: block;
-            width: 100%;
-        }
-        &-intro{
-            position: absolute;
-            display: block;
-            margin-top: -47px;
-            width: 1000px;
-            margin-left: -300px;
-        }
-        p{
-            color: #fff;
-            font-size: 50pt;
-            position: absolute;
-            left: 50%;
-            margin-left: -155px;
-            width: 250px;
-            margin-top: -170px;
-            font-weight: 600;
-            font-family: @font;
-        }
+    
     }
 }
+
+
