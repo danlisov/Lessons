@@ -1,31 +1,28 @@
-.comment-form__landmark{
-
-    &-label{
-        font-weight: 900;
-        font-family: @font;
-        font-size: 11pt; 
-        margin-left: 15px;
-        vertical-align: 30px;
-    }
-
-    &-input[type="checkbox"]{ 
-        -webkit-appearance: none;         
-        margin-bottom: 10px;
-        width: 60px;
-        height: 60px;
-        background-color: @input-bg-color; 
-        border-radius: 10px;   
-        outline: none;   
-    }   
-    
-    &-input[type="checkbox"] + &-label{
-        display:inline-block;        
-    }
-
-    &-input[type="checkbox"]:checked {
-        -webkit-appearance: checkbox;
-        vertical-align: 10px;
-        border: 1px solid @input-bg-color; 
-        
-    }                
+.comment-form__landmark-label{
+    font-weight: 900;
+    font-family: @font;
+    font-size: 11pt; 
+    margin-left: 15px;
+    vertical-align: 30px;
 }
+
+.comment-form__landmark-input[type="checkbox"]{ 
+    -webkit-appearance: none;         
+    margin-bottom: 10px;
+    width: 60px;
+    height: 60px;
+    background-color: @input-bg-color; 
+    border-radius: 10px;   
+    outline: none;   
+}   
+    
+.comment-form__landmark-input[type="checkbox"] + &-label{
+    display:inline-block;        
+}
+
+.comment-form__landmark-input[type="checkbox"]:checked {
+    -webkit-appearance: checkbox;
+    vertical-align: 10px;
+    border: 1px solid @input-bg-color; 
+}        
+                
