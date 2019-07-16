@@ -4,7 +4,7 @@
   "private": true,
   "description": "",
   "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "1.x",
+    "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "9.1.x",
     "browser-sync": "2.24.x",
     "del": "^3.0.0",
@@ -22,8 +22,8 @@
     "postcss-input-style": "1.0.0",
     "posthtml-include": "^1.2.0",
     "gulp-rename": "^1.4.0",
-    "stylelint": "9.6.x",
-    "stylelint-config-htmlacademy": "0.1.x"
+    "stylelint": "^10.1.0",
+    "stylelint-config-htmlacademy": "^0.1.4"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
