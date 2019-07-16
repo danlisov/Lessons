@@ -1,5 +1,6 @@
+//noinspection Stylelint
 .comment-form__fieldset{
-    padding-top: 25px; 
+    padding-top: 25px;
     border-left: none;
     border-right: none;
     border-bottom: none;
@@ -12,13 +13,14 @@
     text-transform: uppercase;
     font-family: @font;
     text-align: center;
-} 
-    
-input::-webkit-input-placeholder { 
-    color: #000; 
+}
+
+input::-webkit-input-placeholder {
+    color: #000;
     font-weight: 700;
     font-size: 12pt;
-}       
+}
+
 .comment-text{
     text-align: center;
     font-family:@font;
@@ -26,13 +28,25 @@ input::-webkit-input-placeholder {
     color: @main-text-color;
     margin-bottom: 25px;
 }
-       
-.comment-form{       
+
+.comment-form{
     margin-top: 50px;
     margin-left: 0px;
-}                                        
+}
 
-.comment-form__button{
+.main{
+    .comment-form__fieldset{
+        padding-top: 25px;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+        border-top: 1px solid @input-bg-color;
+    }
+    .form-header {
+      font-size: @header-size;
+      font-weight: bold;
+    }
+      .comment-form__button{
     margin-top: 30px;
     margin-left: 12px;
     margin-right: 12px;
@@ -46,5 +60,45 @@ input::-webkit-input-placeholder {
         width: 100%;
         height: 60px;
         font-family: @font;
-    }                                
-}    
+
+        text-align: center;
+    }
+    .comment{
+        input::-webkit-input-placeholder {
+            color: #000;
+            font-weight: 700;
+            font-size: 12pt;
+        }
+        &-text{
+            text-align: center;
+            font-family:@font;
+            text-transform: uppercase;
+            color: @main-text-color;
+            margin-bottom: 25px;
+        }
+
+        &-form{
+
+           margin-top: 50px;
+           margin-left: 0px;
+
+            &__button{
+                margin-top: 30px;
+                margin-left: 12px;
+                margin-right: 12px;
+                .btn{
+                    background-color: @btn-color;
+                    color: #fff;
+                    font-size: 14pt;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    border: none;
+                    width: 100%;
+                    height: 60px;
+                    font-family: @font;
+                }
+            }
+        }
+    }
+} }
+

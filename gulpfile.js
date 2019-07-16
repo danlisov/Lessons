@@ -87,7 +87,7 @@ gulp.task("server", function () {
   });
 
   gulp.watch("source/less/**/*.less", gulp.series("build_css"));
-  gulp.watch("source/img/*.svg", gulp.series("create_svg_sprite", "build_html", "refresh"));
+  gulp.watch("source/img/*", gulp.series("create_svg_sprite", "build_html", "refresh"));
   gulp.watch("source/*.html", gulp.series("build_html", "refresh"));
 });
 

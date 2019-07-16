@@ -7,6 +7,9 @@
   <title>Document</title>
 </head>
 <body>
+<div style="display: none">
+  <include src="build/img/sprite.svg"></include>
+</div>
 
 		<header class="header">
 			<nav class="header__menu" id="nav-menu">
@@ -17,29 +20,28 @@
 					<a href="#" class="header__navigation-a second"><li class="header__navigation-li">HTML Academy</li></a>
 					<div class="header__icon"></div>
 				</ul>
-									
+
 			</nav>
 
 			<div class="header__logo">
 				<div class="svg">
-					<a class="to-nav" href="#nav-menu" onclick="">
-						<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-						width="30" height="30"
-						viewBox="0 0 50 50"
-						style=" fill:#81b3d2;">    
-							<path class="to-nav__path"  d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z">						
-							</path>
-						</svg>
+					<a class="to-nav" onclick="">
+            <svg class="" >
+              <use xlink:href="#burger"></use>
+            </svg>
 					</a>
-				</div>	
-				
-				<div class="header__bg">
+				</div>
+				<div class="header__icon">
+					<img class="header__icon-img"  src="./img/vectorpaint.svg" alt="Логотип">
+				</div>
+
+        <div class="header__bg">
 					<div class="header__bg-photo"></div>
 					<div class="header__bg-intro"></div>
 					<h1 class="header__bg-sedona">SEDONA</h1>
 				</div>
 			</div>
-			
+
 		</header>
 
 
@@ -49,22 +51,22 @@
 				<form action="#" class="comment-form">
 					<h2 class="form-header">Оставте свой отзыв</h2>
 					<p class="comment-text">Помогите нашим отелям стать лучше! Оставь отзыв о них, а также о посещенных вами достопремечательностях</p>
-					
+
 					<div class="comment-form__submit">
 							<fieldset class="comment-form__fieldset">
 								<h2 class="form-header">Представьтесь:</h2>
 								<div class="submit-flex">
 									<div class="name-flex">
 										<label class="comment-form__submit-label name" for="name">Имя<sup>*</sup>:</label>
-										<input  class="comment-form__submit-input  name-input" id="name" type="text" placeholder="Имя">		
+										<input  class="comment-form__submit-input  name-input" id="name" type="text" placeholder="Имя">
 									</div>
 									<div class="surname-flex">
 										<label class="comment-form__submit-label surname" for="surname">Фамилия<sup>*</sup>:</label>
-										<input class="comment-form__submit-input surname-input" id="surname" type="text" placeholder="Фамилия">			
+										<input class="comment-form__submit-input surname-input" id="surname" type="text" placeholder="Фамилия">
 									</div>
 									<div class="patr-flex">
-										<label class="comment-form__submit-label patr" for="patronymic">Отчество:</label>						
-										<input class="comment-form__submit-input patr-input" id="patronymic" type="text" placeholder="Отчество">			
+										<label class="comment-form__submit-label patr" for="patronymic">Отчество:</label>
+										<input class="comment-form__submit-input patr-input" id="patronymic" type="text" placeholder="Отчество">
 									</div>
 									</div>
 							</fieldset>
@@ -123,13 +125,13 @@
 							<fieldset class="comment-form__fieldset">
 								<h2 class="form-header">Опишите свои эмоции:</h2>
 								<textarea class="comment-form__emotion-textarea" name="comment" id="" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea><br>
-								
+
 							</fieldset>
 					</div>
 					<div class="comment-form__button">
-						<button class="btn">Отправить отзыв</button>						
+						<button class="btn">Отправить отзыв</button>
 					</div>
-					
+
 				</form>
 			</div>
 		</main>
@@ -148,7 +150,7 @@
 						<a href="#"><img src="img/youtube.svg" alt=""></a>
 					</div>
 				</div>
-				
+
 				<div class="footer__logo">
 					<span class="footer__text-logo">Разработано</span>
 					<a href="#"><img src="img/logo-academy.png" alt=""></a>
