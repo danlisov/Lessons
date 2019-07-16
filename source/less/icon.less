@@ -1,10 +1,21 @@
 .header__icon{
-    &-img{
-        width: 160px;
-        height: 80px;
-        position: absolute;
-        left: 50%;
-        margin-left: -80px;
-        margin-top: -40px;  
+    background: url(../img/vectorpaint.svg);
+    background-repeat: no-repeat;
+    width: 160px;
+    height: 80px;
+    position: absolute;
+    left: 50%;
+    margin-left: -80px;
+  
+}
+
+@media (min-width: 1224px){
+    .header__icon{
+        background: url(../img/logo-sedona.svg);
+        margin-top: 0;
+        position: static;
+        display: flex;
+        order: 1;
+        margin-left: 0;
     }
 }

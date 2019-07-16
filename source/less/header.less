@@ -1,33 +1,47 @@
-@import url("variables.less");
-@import url("logo.less");
-@import url("icon.less");
-@import url("bg.less");
-.header{
-    &__navigation{
-        margin-left: 0;
-        padding-left: 0; 
-        margin-top: 0; 
-        margin-bottom: 10px;
-        list-style-type: disc;
-        &-li{
-            background-color: @btn-color;
-            text-align: center;  
-            list-style-type: none;
-            width: 100%;
-            line-height: 60px;
-            border-bottom: 1px solid #678fa8;
-            height: 60px;
-            
-        }
-        &-a{
-            font-family: @font;
-            text-transform: uppercase;
-            font-size: 14pt;
-            text-decoration: none;
-            color: #fff;
-        }
-    
-    }
+.header__navigation{
+    margin-left: 0;
+    padding-left: 0; 
+    margin-top: 0; 
+    margin-bottom: 10px;
+    list-style-type: disc;    
+}
+.header__navigation-li{
+    background-color: @btn-color;
+    text-align: center;  
+    list-style-type: none;
+    width: 100%;
+    line-height: 60px;
+    border-bottom: 1px solid #678fa8;
+    height: 60px;    
+}
+.header__navigation-a{
+    font-family: @font;
+    text-transform: uppercase;
+    font-size: 14pt;
+    text-decoration: none;
+    color: #fff;
 }
 
-
+@media (min-width: 1224px){
+    .header__navigation{
+        margin-bottom: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+    .header__navigation-li{
+        background-color: #fff;
+        border: none;
+        height: 60px;
+    }
+    .header__navigation-a{
+        color: #000;
+    } 
+    .first{
+        display: flex;
+        order: 1;
+    }
+    .second{
+        display: flex;
+        order: 2;
+    }
+}
