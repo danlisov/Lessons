@@ -4,7 +4,6 @@
     border-right: none;
     border-bottom: none;
     border-top: 1px solid @input-bg-color;
-    border-width: 100%;
 }
 .form-header{
     font-size: @header-size;
@@ -25,6 +24,7 @@ input::-webkit-input-placeholder {
     text-transform: uppercase;
     color: @main-text-color;
     margin-bottom: 25px;
+    line-height: 2;
 }
        
 .comment-form{       
@@ -35,16 +35,48 @@ input::-webkit-input-placeholder {
 .comment-form__button{
     margin-top: 30px;
     margin-left: 12px;
-    margin-right: 12px;
-    .btn{
-        background-color: @btn-color;
-        color: #fff;
-        font-size: 14pt;
-        font-weight: 700;
-        text-transform: uppercase;
-        border: none;
-        width: 100%;
-        height: 60px;
-        font-family: @font;
-    }                                
-}    
+    margin-right: 12px;                               
+} 
+
+.btn{
+    background-color: @btn-color;
+    color: #fff;
+    font-size: 14pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    width: 100%;
+    height: 60px;
+    font-family: @font;
+} 
+
+@media(min-width:1224px){
+    
+    .comment-flex1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .comment-flex2{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .comment-form__text{
+        display: flex;
+        flex-direction: column;
+        order: 1;
+    }
+    .comment-form__submit{
+        display: flex;
+        order: 2;
+    }
+   
+    
+    
+    .comment-form__button{
+        display: flex;
+        order: 6;
+    }
+}
