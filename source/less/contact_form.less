@@ -4,11 +4,12 @@
     margin-bottom: 20px;
     background: @input-bg-color;                   
     border: none;
-    display: inline-block;
     width: 100%;
+    display: inline-block;
     padding-left: 20px;
     outline: none; 
-    margin-top: 20px;           
+    margin-top: 20px; 
+    flex-grow: 10;          
 }
 .comment-form__contact-label{
     font-family:@font;
@@ -26,12 +27,13 @@
     display: inline-block;
     margin-top:20px;
     position: absolute;
-    left: 100%;
-    margin-left: -62px;  
+    margin-left: -50px;
 }   
 .icon-img{
     width: 100%;
 }
+
+
 
 @media (min-width: 1224px){
     .comment-form__contact{
@@ -40,6 +42,7 @@
         align-items: center;
         order: 3;
         width: 100%;
+        margin: auto 130px;
     }
 
     .contact-flex{
@@ -48,31 +51,43 @@
         justify-content: space-around;
         align-content: center;
     }
-    .comment-form__contact-icon{
-        left: 0;
-        margin-left: 0;
+    .flex-contact-icon{
+        display: flex;
+    }
+    .icon-flex1{
+        margin-left: -10px;
+    }
+    .icon-flex2{
+        margin-right: -16px;
     }
     .comment-form__contact-input{
-        width: 25%;
         margin-top: 0;
-    }
-    .contact-icon1{
-        left: 50%;
-        margin-left: -50px;
-        margin-top: 0px;
-    }
-    .contact-icon2{
-        left: 90%;
-        margin-left: -92px;
-        margin-top: 0;
+        display: flex;
+        flex-grow:1;
+        width: auto;
     }
     .comment-form__contact-label{
-        margin-left: 20px;
+        margin-left: 0;
         line-height: 3;
+        display: flex;
+        margin-right: 20px;
+    }
+    .comment-form__contact-icon{
+        position: static;
+        display: flex;
+        justify-content: flex-start;
+        left: 0;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    
+    .phone-text{
+        display: none;
     }
     .contact-fieldset{
         width: 100%;
-        margin: auto 165px;
+
     }
     .contact-header{
         margin-bottom: 50px;

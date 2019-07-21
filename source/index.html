@@ -46,24 +46,25 @@
 		<main class="main">
 
 			<div class="comment">
-				<form action="#" class="comment-form">
+				<form action="#" class="comment-form">					
+					
+					<div class="comment-form__text">
+							<h2 class="form-header">Оставте свой отзыв</h2>
+							<p class="comment-text">Помогите нашим отелям стать лучше! Оставь отзыв о них, <span class="comment-text-br">а также о посещенных вами достопремечательностях</span></p>
+					</div>
 					
 
-						<div class="comment-form__text">
-							<h2 class="form-header">Оставте свой отзыв</h2>
-							<p class="comment-text">Помогите нашим отелям стать лучше! Оставь отзыв о них, а также о посещенных вами достопремечательностях</p>
-						</div>
-						<div class="comment-flex1">
+					<div class="comment-flex1">
 							<div class="comment-form__submit">
 							<fieldset class="comment-form__fieldset">
 								<h2 class="form-header">Представьтесь:</h2>
 								<div class="submit-flex">
 									<div class="name-flex">
-										<label class="comment-form__submit-label name" for="name">Имя<sup>*</sup>:</label>
+										<label class="comment-form__submit-label name" for="name">Имя <span> *</span>:</label>
 										<input  class="comment-form__submit-input  name-input" id="name" type="text" placeholder="Имя">		
 									</div>
 									<div class="surname-flex">
-										<label class="comment-form__submit-label surname" for="surname">Фамилия<sup>*</sup>:</label>
+										<label class="comment-form__submit-label surname" for="surname">Фамилия <span> *</span>:</label>
 										<input class="comment-form__submit-input surname-input" id="surname" type="text" placeholder="Фамилия">			
 									</div>
 									<div class="patr-flex">
@@ -77,16 +78,23 @@
 								<fieldset class="comment-form__fieldset contact-fieldset">
 									<legend class="form-header contact-header">Контактная информация:</legend>
 									<div class="contact-flex">
-										<label class="comment-form__contact-label" for="phone">Контактный телефон <sup>*</sup>:</label>
-										<input class="comment-form__contact-input" id="phone" type="text" placeholder="Введите телефон">
-										<div class="comment-form__contact-icon contact-icon1" >
-											<img class="icon-img"  src="img/phone.svg" alt="">
-										</div><br>
-										<label class="comment-form__contact-label" for="e-mail">Электронная почта <sup>*</sup>:</label>
-										<input class="comment-form__contact-input" id="e-mail" type="text" placeholder="Введите e-mail">
-										<div class="comment-form__contact-icon contact-icon2">
-											<img class="icon-img" src="img/e-mail.svg" alt="">
+										
+										<div class="flex-contact-icon icon-flex1">
+											<label class="comment-form__contact-label" for="phone"><span class="phone-text">Контактный</span> телефон <span>*</span>:</label>										
+											<input class="comment-form__contact-input" id="phone" type="text" placeholder="Введите телефон">
+											<div class="comment-form__contact-icon contact-icon1" >
+												<img class="icon-img"  src="img/phone.svg" alt="">
+											</div>
 										</div>
+										
+										<div class="flex-contact-icon icon-flex2">
+											<label class="comment-form__contact-label" for="e-mail">Электронная почта <span>*</span>:</label>
+											<input class="comment-form__contact-input" id="e-mail" type="text" placeholder="Введите e-mail">
+											<div class="comment-form__contact-icon contact-icon2">
+												<img class="icon-img" src="img/e-mail.svg" alt="">
+											</div>
+										</div>
+										
 									</div>
 									
 								</fieldset>
@@ -111,22 +119,30 @@
 									</ul>
 								</fieldset>
 							</div>
-						</div>		
-						
-
+					</div>		
+					
 					<div class="comment-flex2">
 						<div class="comment-form__landmark">
 							<fieldset class="comment-form__fieldset fieldset-land">
 								<legend class="form-header land-header">Посещенные<br> достопримечательности:</legend>
 								<div class="land-flex">
-									<input id="devil" class="comment-form__landmark-input" type="checkbox" name="place1">
-									<label  class="comment-form__landmark-label" for="devil">Мост Дьявола</label> <br>
-									<input id="bell" class="comment-form__landmark-input" type="checkbox" name="place2">
-									<label  class="comment-form__landmark-label" for="bell">Гора-Колокол</label> <br>
-									<input id="slide" class="comment-form__landmark-input" type="checkbox" name="place3">
-									<label  class="comment-form__landmark-label" for="slide">Слайд-парк</label> <br>
-									<input id="redrocks" class="comment-form__landmark-input" type="checkbox" name="place4">
-									<label  class="comment-form__landmark-label" for="redrocks">Красные скалы</label>
+									<div class="land">
+										<input id="devil" class="comment-form__landmark-input" type="checkbox" name="place1">
+									<label  class="comment-form__landmark-label" for="devil">Мост Дьявола</label> 
+									</div>
+									<div class="land">
+										<input id="bell" class="comment-form__landmark-input" type="checkbox" name="place2">
+									<label  class="comment-form__landmark-label" for="bell">Гора-Колокол</label> 
+									</div>
+									<div class="land">
+										<input id="slide" class="comment-form__landmark-input" type="checkbox" name="place3">
+									<label  class="comment-form__landmark-label" for="slide">Слайд-парк</label> 
+									</div>
+									<div class="land">
+										<input id="redrocks" class="comment-form__landmark-input" type="checkbox" name="place4">
+										<label  class="comment-form__landmark-label" for="redrocks">Красные скалы</label>
+									</div>
+									
 								</div>
 								
 							</fieldset>
@@ -139,7 +155,8 @@
 							</fieldset>
 						</div>
 						<div class="comment-form__button">
-							<button class="btn">Отправить отзыв</button>						
+							<button class="btn">Отправить отзыв</button>
+							<span class="span-btn">* - обязательные поля</span>						
 						</div>
 					</div>
 					

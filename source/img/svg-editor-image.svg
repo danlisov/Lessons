@@ -1,0 +1,17 @@
+<svg width="1200" height="58.99999999999999" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path id="svg_2" d="m949,25.9375l0,44.0625l0,-44.0625z" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="null" fill="#fff"/>
+  <path id="svg_3" d="m951.33343,28.75l-0.6666,39.25001l0.6666,-39.25001z" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="null" fill="#fff"/>
+  <path id="svg_4" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="null" fill="#fff"/>
+  <path id="svg_5" d="m952.66676,31.41667l-0.6666,27.25001l0.16665,-6.8125l0.16665,-6.81251l0.16665,-6.8125l0.16665,-6.8125z" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="null" fill="#fff"/>
+  <path id="svg_6" d="m947.33342,2.08333l-0.66659,56.58335l-697.33345,-1.33334l0,-57.33334l370.66673,60.00001l163.66666,-28.95834l163.66665,-28.95834z" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="null" fill="#fff"/>
+  <path id="svg_7" d="m756.666719,39.416673l-91.333272,-10.083335" opacity="0.5" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="null" fill="#fff"/>
+  <path id="svg_8" d="m1198.66687,60.00001l0,-60.00001l0,60.00001z" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="null" fill="#fff"/>
+ </g>
+</svg>

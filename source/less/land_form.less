@@ -8,7 +8,7 @@
 
 .comment-form__landmark-input[type="checkbox"]{ 
     -webkit-appearance: none;         
-    margin-bottom: 10px;
+    margin: 10px;
     width: 60px;
     height: 60px;
     background-color: @input-bg-color; 
@@ -16,13 +16,12 @@
     outline: none;   
 }   
     
-.comment-form__landmark-input[type="checkbox"] + &-label{
+.comment-form__landmark-input[type="checkbox"] + .comment-form__landmark-label{
     display:inline-block;        
 }
 
 .comment-form__landmark-input[type="checkbox"]:checked {
-    -webkit-appearance: checkbox;
-    vertical-align: 10px;
+    background-image: url(../img/checkbox.svg);
     border: 1px solid @input-bg-color; 
 }        
                 
@@ -30,18 +29,18 @@
     .comment-form__landmark{
         display: flex;
         order: 4;
-        margin-bottom: 50px;
+        margin-bottom: 100px; 
+        margin: auto 130px;
     }
     .land-flex{
         display: flex;
         flex-direction: row;
-        width: 100%;
         justify-content: space-around;
         align-items: center;
+        margin: auto 70px;
     }
     .fieldset-land{
         width: 100%;
-        margin: auto 165px;
     }
     .land-header{
         margin-bottom: 50px;
@@ -49,5 +48,8 @@
     }
     .comment-form__landmark-label{
         vertical-align: 30px;
+    }
+    .land-flex{
+        margin: 0;
     }
 }

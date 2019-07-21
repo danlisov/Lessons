@@ -49,9 +49,11 @@ input::-webkit-input-placeholder {
     height: 60px;
     font-family: @font;
 } 
+.span-btn{
+    display: none;
+}
 
 @media(min-width:1224px){
-    
     .comment-flex1{
         display: flex;
         flex-direction: row;
@@ -68,15 +70,33 @@ input::-webkit-input-placeholder {
         flex-direction: column;
         order: 1;
     }
-    .comment-form__submit{
+    .comment-text{
         display: flex;
-        order: 2;
+        flex-direction: column;
     }
-   
-    
+    .comment-text-br{
+        display: block;
+    }
     
     .comment-form__button{
         display: flex;
         order: 6;
+    }
+
+    .btn{
+        display: flex;
+        flex-grow: 1;
+        width: 30%;
+        justify-content: center;
+        margin-left: 140px;
+    }
+    .span-btn{
+        text-transform: uppercase;
+        color: @main-text-color;
+        display: flex;
+        flex-grow: 2;
+        justify-content: flex-end;
+        margin-right: 140px;
+        align-items: center;
     }
 }

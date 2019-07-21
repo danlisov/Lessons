@@ -14,8 +14,8 @@
     padding-left: 20px;
     border: none; 
     display: flex;
-    flex-grow: 6;
-    margin-right: 20px;
+    flex-grow: 2;
+    width: 25%;
     outline: none;    
 }
 .comment-form__submit-label{
@@ -39,6 +39,10 @@
 }
 
 @media (min-width:1224px){
+    .comment-form__submit{
+        display: flex;
+        order: 2;
+    }
     .comment-form__submit-input{
         margin-right: 0;
         flex-grow: 8;
